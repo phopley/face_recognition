@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" ?>
+<launch>
+  <rosparam command="load" file="$(find face_recognition)/config/config.yaml" />
+  <node pkg="face_recognition" type="face_recognition_node.py" name="face_recognition_node" />
+</launch>

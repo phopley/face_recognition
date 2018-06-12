@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>face_recognition</name>
+  <version>0.0.0</version>
+  <description>The face_recognition package is a face recognition node</description>
+
+  <maintainer email="philip@thehopleys.me.uk">Philip Hopley</maintainer>
+
+  <license>BSD</license>
+
+  <author email="philip@thehopleys.me.uk">Philip Hopley</author> 
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>face_recognition_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>face_recognition_msgs</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>cv_bridge</build_export_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>face_recognition_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+
+</package>

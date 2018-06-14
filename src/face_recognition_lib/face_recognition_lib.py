@@ -30,11 +30,11 @@ class FaceRecognition:
   # and the given width and height
   def draw_rectangle(self, img, rect, bgr):
     (x, y, w, h) = rect
-    cv2.rectangle(img, (x, y), (x+w, y+h), bgr, 2)
+    cv2.rectangle(img, (x, y), (x+w, y+h), bgr, 4)
 
   # Function to draw text on give image starting at the passed (x, y) coordinates. 
   def draw_text(self, img, text, x, y, bgr):    
-    cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_PLAIN, 1.5, bgr, 2)
+    cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_PLAIN, 3.0, bgr, 4)
 
   # This function detects any faces using OpenCV from the supplied image
   def detect_faces(self, img):

@@ -40,7 +40,7 @@ def get_images_and_labels(path):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
 
     # Get the image id
-    id = int(os.path.split(imagePath)[-1].split(".")[1])
+    id = int(os.path.split(image_path)[-1].split(".")[1])
 
     # Get the face from the training images
     # Don't need any scaling as these images already full face

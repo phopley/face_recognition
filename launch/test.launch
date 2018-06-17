@@ -1,5 +1,7 @@
-﻿<?xml version="1.0" ?>
+<?xml version="1.0" ?>
 <launch>
-  <rosparam command="load" file="$(find face_recognition)/config/config.yaml" />
+  <rosparam command="load" file="$(find face_recognition)/config/config.yaml" />  
+  <include file="$(find raspicam_node)/launch/camerav2_1280x960.launch" />
+  <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/raspicam_node/image/ raw out:=/camera/image/raw" />
   <node pkg="face_recognition" type="face_recognition_node.py" name="face_recognition_node" />
 </launch>

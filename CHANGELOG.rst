@@ -2,7 +2,7 @@
 Changelog for package face_recognition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Unreleased
+0.1.1 (2018-06-24)
 ------------------
 * Updated test.launch to include raspicam and republish node
 

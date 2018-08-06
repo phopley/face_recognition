@@ -35,9 +35,8 @@ def get_images_and_labels(path):
   # Loop all the file path
   for image_path in image_paths:
 
-    # Get the image and convert it to grayscale
-    img = cv2.imread(image_path)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+    # The stored image is grayscale so read in in gray scale
+    gray = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     # Get the image id
     id = int(os.path.split(image_path)[-1].split(".")[1])
@@ -74,3 +73,4 @@ recognizer.train(faces, np.array(ids))
 assure_path_exists('../trainer/')
 recognizer.save('../trainer/trainer.yml')
 
+print("Done")

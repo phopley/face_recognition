@@ -50,7 +50,7 @@ with picamera.PiCamera() as camera:
     count = 100
     end = 199
 
-  # If not already in the dicctionary add details
+  # If not already in the dictionary add details
   if not face_id in names_dict:
     names_dict[int(face_id)]=name
 

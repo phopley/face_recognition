@@ -2,11 +2,12 @@
 Changelog for package face_recognition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Out standing changes
+0.1.2 (2018-08-07)
 ------------------
 * Minor comment change
 * Update email address in package.xml file
 * In training.py load gray scale image directly
+* Updates to standardise README.md
 
 0.1.1 (2018-06-24)
 ------------------

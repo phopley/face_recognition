@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>face_recognition</name>
-  <version>0.0.0</version>
+  <version>0.1.2</version>
   <description>The face_recognition package is a face recognition node</description>
 
   <maintainer email="sleepyserver6@gmail.com">Philip Hopley</maintainer>

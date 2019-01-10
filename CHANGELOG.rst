@@ -2,6 +2,11 @@
 Changelog for package face_recognition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.0 (2019-01-10)
+------------------
+* Now using compressed images in the topics
+* Now using an Action to control the process
+
 0.1.2 (2018-08-07)
 ------------------
 * Minor comment change

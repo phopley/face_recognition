@@ -4,23 +4,24 @@ ROS node for face recognition. Included with the node is are a training data gen
 
 ## Running the Node
 
-Once you have the node built you can test it by launching the test.launch file. This launch file also starts the UbiquityRobotics raspicam_node and republish from the image_transport package as my system uses the Raspberry Pi camera.
+Once you have the node built you can test it by launching the test.launch file. This launch file also starts the UbiquityRobotics raspicam_node for the Raspberry Pi camera.
 
 ## Node Information
 Topics:
 
-* `camera/image/raw`:  
-  Subscribes `sensor_msgs/Image` raw image message to check for recognised faces
+* `raspicam_node/image/compressed`:  
+  Subscribes `sensor_msgs/CompressedImage` image message to check for recognised faces
   
-* `face_recognition_node/start`:  
-  Subscribes `std_msgs/Empty` used to indicate a face recognition operation should be conducted
-  
-* `face_recognition_node/adjusted_image`:  
-  Publishes `sensor_msgs/Image` the image from the camera with a box around any faces recognised and the name of the identified subject
+* `face_recognition_node/image/compressed`:  
+  Publishes `sensor_msgs/CompressedImage` the image from the camera with a box around any faces recognised and the name of the identified subject
   
 * `face_recognition_node/result`:  
   Publishes `face_recognition/face_recognition_msgs` two arrays containing the ID's and names of any faces recognised
 
+Action:
+
+* `face_recognition_msgs/scan_for_faces`:  
+  Server used to control the process of scanning for recognised faces in the current image.
 
 Parameters:
 
